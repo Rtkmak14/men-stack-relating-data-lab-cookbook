@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+</head>
+<body>
+  <%- include('../partials/_navbar') %>
+  <h1>Add a New Food Item</h1>
+
+  <form action="/users/<%= user._id %>/foods" method="POST">
+    <label for="name">Food Name:</label>
+    <input type="text" name="name" id="name" required />
+
+    <button type="submit">Add Item</button>
+  </form>
+
+</body>
+</body>
+</html>
